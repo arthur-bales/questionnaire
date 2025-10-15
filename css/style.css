@@ -1,0 +1,87 @@
+@import url("/css/reset.css");
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background-image: linear-gradient(to right top, #2d0646, #542970, #7e4c9d, #a972cd, #d799ff);
+    height: 100vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px; 
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+footer {
+    position:fixed;
+    height: 20px; 
+    width: 100vw; 
+    bottom: 0px; 
+    text-align: center;
+    font-size: 12px; 
+    color: pink; 
+    opacity: 0.4;
+}
+
+.road {
+    display: flex;
+    margin: 30px;
+    gap: 50px; 
+}
+
+.bulle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 30px; 
+    width: 30px; 
+    background-color: #292929;
+    color: white; 
+}
+
+.une {
+    background-color: #FF0066; 
+}
+
+.questionnaire {
+    border: solid 1px red; 
+    width: 45vw;
+    height: 45vh; 
+    color: lightgray; 
+    font-size: 16px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reponse {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    margin: 40px; 
+}
+
+button {
+    border: none; 
+    width: 10vw;
+    padding: 10px 5px;
+    background-color: #292929;
+    color: lightgray;
+    border-radius: 4px;  
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #303030; 
+    transform: scale(1.02);
+}
