@@ -7,15 +7,25 @@ let etape = 1;
 
 // Calcul du score
 let scoreDisplay = document.querySelectorAll(".score");
-let scorePoints = 0;
+let scorePoints = -1; //cf index.html ligne 27 
 const correctAnswer = document.querySelectorAll(".correct");
 
 buttonsSelector.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.classList.contains("correct")) {
       scorePoints += 1;
-      console.log(scorePoints);
-    }
+      console.log(etape); 
+        scoreDisplay.forEach((el) => {
+            el.style.border = "solid 1px #adff2f"; 
+            el.style.boxShadow = "0px 0px 15px -3px #adff2f"; 
+        })
+    } else {
+        scoreDisplay.forEach((el) => {
+            console.log("error");
+            el.style.border = "solid 1px red";
+            el.style.boxShadow = "0px 0px 15px -3px red";
+        })
+}
   });
 });
 
