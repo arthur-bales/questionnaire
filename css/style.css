@@ -5,7 +5,7 @@ body {
 }
 
 section {
-    background-image: linear-gradient(to right top, #2d0646, #542970, #7e4c9d, #a972cd, #d799ff);
+    background-image: radial-gradient(circle, #ae3465, #802b4b, #552033, #2d151d, #000000);;
     height: 100vh;
     width: 100vw; 
     display: flex;
@@ -46,7 +46,7 @@ footer {
     border-radius: 50%;
     height: 30px; 
     width: 30px; 
-    background-color: #292929;
+    background-color: #212121;
     color: white; 
 }
 
@@ -78,7 +78,7 @@ button {
     border: none; 
     width: 15vw;
     padding: 10px 5px;
-    background-color: #292929;
+    background-color: #212121;
     color: lightgray;
     border-radius: 4px;  
     transition: all 0.2s ease-in-out;
@@ -86,7 +86,8 @@ button {
 
 button:hover {
     cursor: pointer;
-    background-color: #303030; 
+    background-color: #292929; 
+    box-shadow: 0px 0px 10px -3px #FF0066;
     transform: scale(1.02);
 }
 
